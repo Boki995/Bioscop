@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pokusajte ponovo</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/mainstyle.min.css">
+         <script src="js/module.js"></script>
+		 <script src="js/logincontroller.js"></script>
+		 <script src="js/Loginservice.js"></script>
+    </head>
+    <body ng-app="LoginApp" >
+        <div class="container text-center login_form" ng-controller="LoginController">
+		
+		
+            <div class="row modal-custom">  
+            <form name="loginform" id="contact" method="post">
+                <h3>Za rezervaciju karata morate biti clan!</h3>
+                <h4>Unesite podatke:</h4>                
+                    <input name="username" placeholder="Username" type="text" ng-model="Email" required autofocus class="input pass">                              
+                    <input name="password" placeholder="Password" type="password" ng-model="Password" required class="input pass">				
+                    <button name="submit" type="submit" class="btn btn-custom" id="contact-submit" ng-click="sumbit()" data-submit="...Sending">Submit</button>                                
+                
+            </form>
+             <a href="index.html"><button class="btn btn-sm btn-custom">Naslovna strana</button></a>
+        </div>
+    </div>
+	
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>
